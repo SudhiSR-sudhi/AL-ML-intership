@@ -3,8 +3,8 @@ appointments_data = {}
 
 def add_appointment(apt_id, patient_id, doctor_id, date, time):
 
-    from hospital.patients import patients_data as p_db
-    from hospital.doctors import doctors_data as d_db
+    from patients import patients_data as p_db
+    from doctors import doctors_data as d_db
 
     if patient_id not in p_db:
         return "Error: Patient not found!"

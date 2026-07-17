@@ -3,7 +3,7 @@
 billing_data = {}
 
 def create_bill(bill_id, patient_id, amount):
-    from hospital.patients import patients_data as p_db
+    from patients import patients_data as p_db
     if patient_id not in p_db:
         return "Error: Patient not found!"
         

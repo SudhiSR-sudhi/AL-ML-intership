@@ -1,11 +1,11 @@
-data = {}
+doctors_data = {}
 
 def add_doctor(did, name):
-    data[did] = name
-    return "patient added!"
+    doctors_data[did] = name
+    return "doctor added!"
 
 def get_doctor(did):
-    return data.get(did, "Not found")
+    return doctors_data.get(did, "Not found")
 
 def count_doctors():
-    return len(data)
+    return len(doctors_data)

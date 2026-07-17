@@ -1,8 +1,7 @@
-
-import hospital.patients                                  # Style 1: Direct module import
-from hospital.doctors import add_doctor, get_doctor       # Style 2: Explicit function import
-import hospital.appointments as apt                       # Style 3: Module import with Alias
-from hospital import billing                              # Style 4: Submodule from package import
+import patients                                  
+from doctors import add_doctor,get_doctor       
+import appointments as apt                      
+import billing                              
 
 def main():
     while True:
@@ -19,7 +18,7 @@ def main():
         if choice == "1":
             pid = input("Enter Patient ID: ")
             name = input("Enter Patient Name: ")
-            print(hospital.patients.add_patient(pid, name))
+            print(patients.add_patient(pid, name))
             
         elif choice == "2":
             did = input("Enter Doctor ID: ")
