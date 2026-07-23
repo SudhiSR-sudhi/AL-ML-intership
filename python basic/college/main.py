@@ -1,5 +1,3 @@
-"""The main menu program."""
-
 
 import students
 from faculty import add_teacher, get_teacher
